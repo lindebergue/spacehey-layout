@@ -64,15 +64,15 @@ body::before {
   z-index: 3;
 }
 
-/* floating container */
-.floatingContainer {
+/* fixed title bar container */
+.fixedTitleBar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
 }
 
-.floatingContainer__contents {
+.fixedTitleBar__contents {
   width: 810px; /* spacehey's default layout width */
   max-width: 100%;
   margin: 0 auto;
@@ -408,16 +408,4 @@ nav .links {
 .music-table td:first-child {
   /* sidebar and friends comments table */
   background: white;
-}
-
-@media (min-width: 810px) {
-  /* make the content look like a floating window */
-  .floatingContainer {
-    position: absolute;
-    margin-top: 48px;
-  }
-
-  .container {
-    margin-top: 66px;
-  }
 }
