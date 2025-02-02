@@ -133,11 +133,15 @@ body::before {
 
 /* desktop */
 .desktop {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  padding-bottom: 32px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(auto-fill, 74px);
   background-color: var(--desktop-background-color);
   background-image: var(--desktop-background-image);
   background-repeat: no-repeat;
