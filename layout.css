@@ -142,6 +142,7 @@ body::before {
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: repeat(auto-fill, 74px);
+  grid-auto-columns: 74px;
   background-color: var(--desktop-background-color);
   background-image: var(--desktop-background-image);
   background-repeat: no-repeat;
