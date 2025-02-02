@@ -35,6 +35,7 @@
   --spacehey-primary-color: #503b64;
   --spacehey-secondary-color: #3a294a;
   --spacehey-background-color: white;
+  --spacehey-icon-filter: sepia(1) hue-rotate(191deg);
 }
 
 /* cursors */
@@ -388,16 +389,24 @@ nav .links {
 }
 
 .count {
+  /* friends and friends comments count */
   color: var(--spacehey-primary-color);
+}
+
+.icon {
+  /* contact and links icons */
+  filter: var(--spacehey-icon-filter);
 }
 
 .comments-table td,
 .music-table td {
+  /* sidebar and friends comments table */
   background: white;
 }
 
 .comments-table td:first-child,
 .music-table td:first-child {
+  /* sidebar and friends comments table */
   background: white;
 }
 
