@@ -1,15 +1,15 @@
 /* fonts */
 @font-face {
   font-family: 'MS Sans Serif Regular';
-  src: url(/fonts/msSansSerif.woff2) format('woff2'),
-    url(/fonts/msSansSerif.woff) format('woff');
+  src: url(https://lindebergue.github.io/spacehey-layout/fonts/msSansSerif.woff2) format('woff2'),
+    url(https://lindebergue.github.io/spacehey-layout/fonts/msSansSerif.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'MS Sans Serif Bold';
-  src: url(/fonts/msSansSerifBold.woff2) format('woff2'),
-    url(/fonts/msSansSerifBold.woff) format('woff');
+  src: url(https://lindebergue.github.io/spacehey-layout/fonts/msSansSerifBold.woff2) format('woff2'),
+    url(https://lindebergue.github.io/spacehey-layout/fonts/msSansSerifBold.woff) format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -211,7 +211,7 @@ a {
   flex-grow: 0;
   flex-shrink: 0;
   border: none;
-  font-weight: bold;
+  font-family: 'MS Sans Serif Bold', sans-serif;
   box-shadow: inset -1px -1px #000000,
     inset 1px 1px #ffffff,
     inset -2px -2px #808080,
