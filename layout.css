@@ -37,10 +37,6 @@
 body {
   cursor: url(data:;base64,AAACAAEAICAAAAAAAAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAAAEAAAAAAAAAAAAAAgAAAAIAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAGAAAADAAAAAwAAAAYAAABGAAAAbAAAAHwAAAB/gAAAfwAAAH4AAAB8AAAAeAAAAHAAAABgAAAAQAAAAAAAAAAAAAAA//////////////////////////////////////////////////////////////////////5////8P////D////h///94f///MP///xD///8B////AB///wA///8Af///AP///wH///8D////B////w////8f////P////3////8=),auto;
   background-color: var(--desktop-background-color);
-  background-image: var(--desktop-background-image);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 a {
@@ -65,7 +61,7 @@ body::before {
 
 /* floating container */
 .floatingContainer {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -135,8 +131,23 @@ body::before {
   margin-left: 2px;
 }
 
-/* desktop icons */
+/* desktop */
+.desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--desktop-background-color);
+  background-image: var(--desktop-background-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
 .desktopIcon {
+  position: relative;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -317,6 +328,7 @@ footer {
 @media (min-width: 810px) {
   /* make the content look like a floating window */
   .floatingContainer {
+    position: fixed;
     margin-top: 48px;
   }
 
