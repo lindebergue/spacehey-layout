@@ -110,6 +110,10 @@ body::before {
     inset 2px 2px #808080;
 }
 
+.titleBar__button.close {
+  margin-left: 2px;
+}
+
 /* desktop icons */
 .desktopIcon {
   display: flex;
@@ -289,8 +293,8 @@ footer {
   margin-top: 0;
 }
 
-/* make the content look like a floating window */
 @media (min-width: 810px) {
+  /* make the content look like a floating window */
   .floatingContainer {
     margin-top: 48px;
   }
