@@ -15,7 +15,7 @@
   font-style: normal;
 }
 
-/* global styles */
+/* cursors */
 body {
   cursor: url(data:;base64,AAACAAEAICAAAAAAAAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAAAEAAAAAAAAAAAAAAgAAAAIAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAGAAAADAAAAAwAAAAYAAABGAAAAbAAAAHwAAAB/gAAAfwAAAH4AAAB8AAAAeAAAAHAAAABgAAAAQAAAAAAAAAAAAAAA//////////////////////////////////////////////////////////////////////5////8P////D////h///94f///MP///xD///8B////AB///wA///8Af///AP///wH///8D////B////w////8f////P////3////8=),auto;
   background-color: teal;
@@ -24,6 +24,22 @@ body {
 
 a {
   cursor:url(data:;base64,AAACAAEAICAAAAoACgAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAB/gAAAf4AAAP/AAAD/wAAB/8AAAf/gAAP/4AAC/+AABv/gAA7/4AAM/2AAANtgAADbQAAA2wAAANgAAADAAAAAwAAAAMAAAADAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA///////AD///wA///8AP//+AB///gAf//wAH//8AA//+AAP//gAD//wAA//4AAP/+AAD//iAA///gAf//4AP//+AP///gf///4f///+H////h////4f////P//////////////////////////////////////////////////8=),pointer;
+}
+
+/* crt scanlines */
+body::before {
+  content: ' ';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(rgba(76, 40, 100, 0.48) 10%, rgba(0, 0, 0, 0) 50%);
+  background-size: auto;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+  z-index: 3;
 }
 
 /* floating container */
@@ -146,7 +162,7 @@ a {
   font: 11px 'MS Sans Serif Regular', sans-serif;
   background: #c0c0c0;
   box-shadow: inset 0 1px #dfdfdf, inset 0 2px #ffffff;
-  z-index: 99999;
+  z-index: 2;
   user-select: none;
 }
 
