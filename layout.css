@@ -274,7 +274,7 @@ footer {
 }
 
 /* make the content look like a floating window */
-@media (min-width: 1024px) {
+@media (min-width: 810px) {
   .floatingContainer {
     margin-top: 48px;
   }
