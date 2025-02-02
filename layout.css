@@ -249,6 +249,14 @@ a {
   white-space: pre;
 }
 
+/* oldweb stars */
+.oldWebStars {
+  background-image: url(https://lindebergue.github.io/spacehey-layout/images/stars.gif);
+  color: white;
+  font: serif;
+  font-style: italic;
+}
+
 /* spacehey's specific styles */
 .container {
   /* move the content below the title bar */
