@@ -240,6 +240,7 @@ a {
   align-items: center;
   flex-shrink: 0;
   box-shadow: inset -1px -1px #ffffff, inset 1px 1px #808080;
+  padding: 0 6px;
 }
 
 .taskbar__trayClock {
