@@ -51,7 +51,7 @@ body::before {
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: linear-gradient(rgba(76, 40, 100, 0.48) 10%, rgba(0, 0, 0, 0) 50%);
+  background-image: linear-gradient(rgba(76, 40, 100, 0.48) 25%, rgba(0, 0, 0, 0) 50%);
   background-size: auto;
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
