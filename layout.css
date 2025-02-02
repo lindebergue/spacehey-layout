@@ -251,10 +251,13 @@ a {
 
 /* oldweb stars */
 .oldWebStars {
+  padding: 16px;
   background-image: url(https://lindebergue.github.io/spacehey-layout/images/stars.gif);
   color: white;
-  font: serif;
+  font-family: serif;
   font-style: italic;
+  text-align: center;
+  border-radius: 8px;
 }
 
 /* spacehey's specific styles */
