@@ -6,6 +6,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'MS Sans Serif Bold';
   src: url(https://lindebergue.github.io/spacehey-layout/fonts/msSansSerifBold.woff2) format('woff2'),
@@ -173,7 +174,7 @@ a {
 }
 
 .taskbar__task.active {
-  font-weight: bold;
+  font-family: 'MS Sans Serif Bold', sans-serif;
   padding: 4px 3px 2px 4px;
   background-image: url(data:image/svg+xml;base64,CiAgICA8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIiIGhlaWdodD0iMiIgdmlld0JveD0iMCAwIDIgMiI+CiAgICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMSAwSDBWMUgxVjJIMlYxSDFWMFoiIGZpbGw9IndoaXRlIi8+CiAgICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMiAwSDFWMUgwVjJIMVYxSDJWMFoiIGZpbGw9IiNjMGMwYzAiLz4KICAgIDwvc3ZnPgogIA==);
   box-shadow: inset -1px -1px #ffffff,
