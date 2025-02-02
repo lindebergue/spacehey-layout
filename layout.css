@@ -79,6 +79,7 @@ button:not(.logout-btn) {
   font: 11px 'MS Sans Serif Regular', sans-serif;
   background: var(--3d-controls-background);
   color: var(--3d-controls-foreground);
+  cursor: inherit;
   box-shadow:
     inset -1px -1px var(--3d-controls-frame),
     inset 1px 1px var(--3d-controls-highlight),
