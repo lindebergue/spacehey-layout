@@ -17,18 +17,20 @@
 
 /* colors */
 :root {
-  --desktop-background-color: teal;
-  --desktop-background-image: url(https://lindebergue.github.io/spacehey-layout/images/clouds.jpg);
-  --desktop-foreground: white;
+  --desktop-background-color: #000;
+  --desktop-background-image: url(https://lindebergue.github.io/spacehey-layout/images/angel.jpg);
+  --desktop-foreground: #fff;
 
-  --title-bar-background: linear-gradient(90deg, rgb(0, 0, 128), rgb(16, 132, 208));
-  --title-bar-foreground: rgb(255, 255, 255);
+  --title-bar-background: #000;
+  --title-bar-foreground: #fff;
 
-  --3d-controls-background: #c0c0c0;
-  --3d-controls-highlight: #ffffff;
-  --3d-controls-face: #dfdfdf;
-  --3d-controls-frame: #000000;
-  --3d-controls-shadow: #808080;
+  --task-active-background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIHZpZXdCb3g9IjAgMCAyIDIiPgogIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMSAwSDBWMUgxVjJIMlYxSDFWMFoiIGZpbGw9IiM5MjkyOTIiLz4KICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMEgxVjFIMFYySDFWMUgyVjBaIiBmaWxsPSIjNTU1Ii8+Cjwvc3ZnPg==);
+
+  --3d-controls-background: #555;
+  --3d-controls-highlight: #bbb;
+  --3d-controls-face: #929292;
+  --3d-controls-frame: #3a3a3a;
+  --3d-controls-shadow: #000;
 }
 
 /* cursors */
@@ -213,7 +215,7 @@ body::before {
 .taskbar__task.active {
   font-family: 'MS Sans Serif Bold', sans-serif;
   padding: 4px 3px 2px 4px;
-  background-image: url(data:image/svg+xml;base64,CiAgICA8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIiIGhlaWdodD0iMiIgdmlld0JveD0iMCAwIDIgMiI+CiAgICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMSAwSDBWMUgxVjJIMlYxSDFWMFoiIGZpbGw9IndoaXRlIi8+CiAgICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMiAwSDFWMUgwVjJIMVYxSDJWMFoiIGZpbGw9IiNjMGMwYzAiLz4KICAgIDwvc3ZnPgogIA==);
+  background-image: var(--task-active-background);
   box-shadow: inset -1px -1px var(--3d-controls-highlight),
     inset 1px 1px var(--3d-controls-frame),
     inset -2px -2px var(--3d-controls-face),
