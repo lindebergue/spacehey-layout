@@ -501,8 +501,8 @@ body::before {
 
 /* spacehey's specific styles */
 .container {
-  /* move the content below the title bar */
-  margin-top: 41px;
+  /* move the content below the title bar and toolbar */
+  margin-top: 88px;
 }
 
 footer {
