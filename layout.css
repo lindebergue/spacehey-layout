@@ -192,9 +192,6 @@ body::before {
 
 /* status bar */
 .statusBar {
-  position: absolute;
-  left: 0;
-  bottom: 28px;
   width: 100%;
   height: 20px;
   display: flex;
