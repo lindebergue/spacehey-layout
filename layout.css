@@ -195,6 +195,7 @@ body::before {
   gap: 2px;
   padding-top: 2px;
   font: 11px 'MS Sans Serif Regular', sans-serif;
+  background: var(--3d-controls-background);
 }
 
 .statusBar__section {
