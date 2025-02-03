@@ -236,6 +236,7 @@ body::before {
   line-height: 1;
   white-space: nowrap;
   user-select: none;
+  align-content: center;
 }
 
 .toolbar__menuItem:hover {
