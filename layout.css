@@ -124,7 +124,7 @@ body::before {
 }
 
 .browserChrome.bottom {
-  bottom: 28px;
+  bottom: 0;
 }
 
 .browserChrome__contents {
