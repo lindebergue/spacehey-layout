@@ -134,6 +134,7 @@ body::before {
   display: flex;
   flex-flow: column;
   background: var(--3d-controls-background);
+  font: 11px 'MS Sans Serif Regular';
 }
 
 /* title bar */
@@ -143,7 +144,7 @@ body::before {
   padding: 0 2px;
   background: var(--title-bar-background);
   color: var(--title-bar-foreground);
-  font: bold 11px 'MS Sans Serif Regular', sans-serif;
+  font-family: 'MS Sans Serif Bold', sans-serif;
   align-items: center;
   user-select: none;
 }
@@ -229,7 +230,6 @@ body::before {
   background: none;
   text-align: start;
   line-height: 1;
-  font: 11px 'MS Sans Serif Regular';
   white-space: nowrap;
   user-select: none;
 }
@@ -243,6 +243,10 @@ body::before {
   padding: 4px 7px 2px 8px;
   box-shadow: inset -1px -1px var(--3d-controls-highlight),
     inset 1px 1px var(--3d-controls-shadow);
+}
+
+.toolbar__button {
+
 }
 
 /* status bar */
@@ -259,7 +263,7 @@ body::before {
 
 .statusBar__section {
   display: flex;
-  height: 18px;
+  height: 43px;
   padding: 0 2px;
   flex-flow: row nowrap;
   align-items: center;
