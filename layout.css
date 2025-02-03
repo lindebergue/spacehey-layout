@@ -115,9 +115,16 @@ body::before {
 /* browser chrome */
 .browserChrome {
   position: fixed;
-  top: 0;
   left: 0;
   width: 100%;
+}
+
+.browserChrome.top {
+  top: 0;
+}
+
+.browserChrome.bottom {
+  bottom: 28px;
 }
 
 .browserChrome__contents {
