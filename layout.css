@@ -228,7 +228,7 @@ body::before {
   flex-grow: 0;
   flex-shrink: 0;
   margin: 0;
-  padding: 3px 8px 3px 7px;
+  padding: 3px 8px;
   border: none;
   border-radius: 0;
   background: none;
@@ -289,6 +289,10 @@ body::before {
   border-left: 1px solid var(--3d-controls-shadow);
   box-shadow: 1px 0px var(--3d-controls-highlight);
   margin: 2px 3px 2px 2px;
+}
+
+.toolbar__spacer {
+  flex: 1;
 }
 
 .toolbar__text {
