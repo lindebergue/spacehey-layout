@@ -257,6 +257,7 @@ body::before {
   text-align: center;
   min-width: 54px;
   padding: 2px 3px 3px;
+  flex-shrink: 0;
 }
 
 .toolbar__button:hover {
@@ -290,6 +291,7 @@ body::before {
 .toolbar__splitButton {
   display: flex;
   flex-flow: row nowrap;
+  flex-shrink: 0;
 }
 
 .toolbar__splitButton:hover .toolbar__splitButtonMain,
