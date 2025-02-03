@@ -195,6 +195,7 @@ body::before {
 /* toolbars */
 .toolbars {
   margin: 1px 1px 4px 0;
+  background: var(--3d-controls-background);
   border: 1px solid var(--3d-controls-shadow);
   box-shadow: 0 1px var(--3d-controls-highlight),
     1px 0 var(--3d-controls-highlight),
