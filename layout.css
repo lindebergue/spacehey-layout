@@ -131,6 +131,8 @@ body::before {
   width: 810px; /* spacehey's default layout width */
   max-width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-flow: column;
 }
 
 /* title bar */
@@ -197,6 +199,50 @@ body::before {
   box-shadow: 0 1px var(--3d-controls-highlight),
     1px 0 var(--3d-controls-highlight),
     1px 1px var(--3d-controls-highlight);
+}
+
+.toolbar {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 1px 2px;
+  border-top: 1px solid var(--3d-controls-highlight);
+  border-left: 1px solid var(--3d-controls-highlight);
+  box-shadow: 0 -1px inset var(--3d-controls-shadow);
+  overflow: hidden;
+}
+
+.toolbar__thumb {
+  width: 3px;
+  flex: 3px 0 0;
+  margin: 2px 3px;
+  box-shadow: inset -1px -1px var(--3d-controls-shadow),
+    inset 1px 1px var(--3d-controls-highlight);
+}
+
+.toolbar__menuItem {
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 3px 8px 3px 7px;
+  border: none;
+  border-radius: 0;
+  background: none;
+  text-align: start;
+  line-height: 1;
+  font: 11px 'MS Sans Serif Regular';
+  white-space: nowrap;
+  user-select: none;
+}
+
+.toolbar__menuItem:hover {
+  box-shadow: inset -1px -1px var(--3d-controls-shadow),
+    inset 1px 1px var(--3d-controls-highlight);
+}
+
+.toolbar__menuItem:active {
+  padding: 4px 7px 2px 8px;
+  box-shadow: inset -1px -1px var(--3d-controls-highlight),
+    inset 1px 1px var(--3d-controls-shadow);
 }
 
 /* status bar */
