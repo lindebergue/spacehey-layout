@@ -270,7 +270,8 @@ body::before {
     inset 1px 1px var(--3d-controls-shadow);
 }
 
-.toolbar__button:not(:hover) .toolbar__buttonIcon {
+.toolbar__button:not(:hover) .toolbar__buttonIcon,
+.toolbar__splitButton:not(:hover) .toolbar__buttonIcon {
   filter: grayscale(1);
 }
 
@@ -284,6 +285,52 @@ body::before {
   margin-top: 2px;
   line-height: 1;
   white-space: nowrap;
+}
+
+.toolbar__splitButton {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.toolbar__splitButton:hover .toolbar__splitButtonMain,
+.toolbar__splitButton:hover .toolbar__splitButtonArrow {
+  box-shadow: inset -1px -1px var(--3d-controls-shadow),
+    inset 1px 1px var(--3d-controls-highlight);
+}
+
+.toolbar__splitButtonMain {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  min-width: 54px;
+  padding: 2px 3px 3px;
+}
+
+.toolbar__splitButton .toolbar__splitButtonMain:active {
+  padding: 3px 2px 2px 4px;
+  box-shadow: inset -1px -1px var(--3d-controls-highlight),
+    inset 1px 1px var(--3d-controls-shadow);
+}
+
+.toolbar__splitButtonArrow {
+  background: none;
+  border: 0;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  box-shadow: none;
+  padding: 0 1px 1px 0;
+}
+
+.toolbar__splitButton .toolbar__splitButtonArrow:active {
+  box-shadow: inset -1px -1px var(--3d-controls-highlight), inset 1px 1px var(--3d-controls-shadow);
+  padding: 1px 0 0 1px;
+}
+
+.toolbar__splitButtonArrow img {
+  width: 12px;
+  height: 12px;
 }
 
 .toolbar__separator {
