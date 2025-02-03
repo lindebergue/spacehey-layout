@@ -196,6 +196,7 @@ body::before {
 
 /* toolbars */
 .toolbars {
+  margin: 1px 1px 4px 0;
   border: 1px solid var(--3d-controls-shadow);
   box-shadow: 0 1px var(--3d-controls-highlight),
     1px 0 var(--3d-controls-highlight),
@@ -246,7 +247,33 @@ body::before {
 }
 
 .toolbar__button {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  min-width: 54px;
+  padding: 2px 3px 3px;
+}
 
+.toolbar__button:hover {
+  box-shadow: inset -1px -1px var(--3d-controls-shadow),
+    inset 1px 1px var(--3d-controls-highlight);
+}
+
+.toolbar__button:active {
+  padding: 3px 2px 2px 4px;
+  box-shadow: inset -1px -1px var(--3d-controls-highlight),
+    inset 1px 1px var(--3d-controls-shadow);
+}
+
+.toolbar__button:not(:hover) .toolbar__buttonIcon {
+  filter: grayscale(1);
+}
+
+.toolbar__buttonIcon {
+  width: 22px;
+  height: 22px;
+  image-rendering: pixelated;
 }
 
 /* status bar */
@@ -263,7 +290,6 @@ body::before {
 
 .statusBar__section {
   display: flex;
-  height: 43px;
   padding: 0 2px;
   flex-flow: row nowrap;
   align-items: center;
@@ -470,7 +496,7 @@ body::before {
 /* spacehey's specific styles */
 .container {
   /* move the content below the title bar */
-  margin-top: 18px;
+  margin-top: 41px;
 }
 
 footer {
