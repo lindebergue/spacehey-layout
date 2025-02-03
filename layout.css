@@ -276,6 +276,12 @@ body::before {
   image-rendering: pixelated;
 }
 
+.toolbar__buttonText {
+  margin-top: 2px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
 /* status bar */
 .statusBar {
   width: 100%;
