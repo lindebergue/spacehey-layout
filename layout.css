@@ -190,6 +190,14 @@ body::before {
   margin-left: 2px;
 }
 
+/* toolbars */
+.toolbars {
+  margin: 1px 1px 4px 0;
+  border: 1px solid var(--3d-controls-shadow);
+  box-shadow: 0 1px var(--3d-controls-highlight),
+    1px 0 var(--3d-controls-highlight),
+    1px 1px var(--3d-controls-highlight);
+}
 
 /* status bar */
 .statusBar {
@@ -416,8 +424,8 @@ body::before {
 }
 
 footer {
-  /* avoid the taskbar covering spacehey's footer */
-  margin-bottom: 28px;
+  /* avoid the taskbar and status bar covering spacehey's footer */
+  margin-bottom: 48px;
   margin-top: 0;
 }
 
