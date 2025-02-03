@@ -119,6 +119,7 @@ body::before {
   left: 0;
   width: 100%;
   z-index: 2;
+  user-select: none;
 }
 
 .browserChrome.top {
@@ -302,7 +303,6 @@ body::before {
   align-items: center;
   padding: 0 2px 0 24px;
   background: var(--input-background);
-  cursor: var(--input-cursor), text;
   box-shadow: inset -1px -1px var(--3d-controls-highlight),
     inset 1px 1px var(--3d-controls-shadow),
     inset -2px -2px var(--3d-controls-face),
@@ -313,6 +313,7 @@ body::before {
 
 .toolbar__addressBarText {
   flex: 1;
+  cursor: var(--input-cursor), text;
 }
 
 .toolbar__addressBarButton {
@@ -326,6 +327,11 @@ body::before {
     inset 1px 1px var(--3d-controls-face),
     inset -2px -2px var(--3d-controls-frame),
     inset 2px 2px var(--3d-controls-highlight);
+}
+
+.toolbar__addressBarButton:active {
+  box-shadow: inset 1px 1px var(--3d-controls-shadow),
+    inset -1px -1px var(--3d-controls-shadow);
 }
 
 /* status bar */
@@ -374,6 +380,7 @@ body::before {
   background-position: center;
   background-size: cover;
   z-index: -1;
+  user-select: none;
 }
 
 .desktopIcon {
