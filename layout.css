@@ -215,6 +215,10 @@ body::before {
   text-overflow: ellipsis;
 }
 
+.statusBar__icon {
+  margin-right: 4px;
+}
+
 /* desktop */
 .desktop {
   position: fixed;
