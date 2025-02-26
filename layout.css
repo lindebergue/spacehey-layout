@@ -431,7 +431,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  padding-bottom: 32px;
+  padding-bottom: 28px;
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: repeat(auto-fill, 74px);
