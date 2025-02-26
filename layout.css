@@ -438,9 +438,8 @@ body::before {
   grid-auto-columns: 74px;
   background-color: var(--desktop-background-color);
   background-image: var(--desktop-background-image);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
   z-index: -1;
   user-select: none;
 }
