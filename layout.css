@@ -21,8 +21,10 @@
   --desktop-background-image: url(https://lindebergue.github.io/spacehey-layout/images/wallpaper.jpg);
   --desktop-foreground: #fff;
 
-  --title-bar-background: #000;
-  --title-bar-foreground: #fff;
+  --title-bar-inactive-background: #333;
+  --title-bar-inactive-foreground: #fff;
+  --title-bar-active-background: #000;
+  --title-bar-active-foreground: #fff;
 
   --task-active-background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIHZpZXdCb3g9IjAgMCAyIDIiPgogIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMSAwSDBWMUgxVjJIMlYxSDFWMFoiIGZpbGw9IiM5MjkyOTIiLz4KICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMEgxVjFIMFYySDFWMUgyVjBaIiBmaWxsPSIjNTU1Ii8+Cjwvc3ZnPg==);
 
@@ -145,11 +147,16 @@ body::before {
   display: flex;
   height: 18px;
   padding: 0 2px;
-  background: var(--title-bar-background);
-  color: var(--title-bar-foreground);
-  font-family: 'MS Sans Serif Bold', sans-serif;
+  background: var(--title-bar-inactive-background);
+  color: var(--title-bar-inactive-foreground);
+  font: 11px 'MS Sans Serif Bold', sans-serif;
   align-items: center;
   user-select: none;
+}
+
+.titleBar.active {
+  background: var(--title-bar-active-background);
+  color: var(--title-bar-active-foreground);
 }
 
 .titleBar__icon {
@@ -699,6 +706,18 @@ body::before {
   100% {
     transform: translateY(100%);
   }
+}
+
+/* floating window */
+.window {
+  position: fixed;
+  background: var(--3d-controls-background);
+  padding: 3px;
+  box-shadow:
+    inset -1px -1px var(--3d-controls-frame),
+    inset 1px 1px var(--3d-controls-face),
+    inset -2px -2px var(--3d-controls-shadow),
+    inset 2px 2px var(--3d-controls-highlight);
 }
 
 /* spacehey's specific styles */
