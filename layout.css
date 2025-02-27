@@ -593,13 +593,17 @@ body::before {
   align-items: center;
   flex-shrink: 0;
   box-shadow: inset -1px -1px var(--3d-controls-highlight), inset 1px 1px var(--3d-controls-shadow);
-  padding: 0 6px;
+  padding: 0 2px;
 }
 
 .taskbar__trayClock {
   position: relative;
   padding: 4px 6px 2px 6px;
   white-space: pre;
+}
+
+.taskbar__trayIcon + .taskbar__trayIcon {
+  margin-left: 1px;
 }
 
 /* oldweb stars */
