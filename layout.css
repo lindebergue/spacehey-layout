@@ -567,6 +567,10 @@ body::before {
     color: var(--title-bar-foreground);
     background: var(--title-bar-background);
   }
+  100% {
+    color: var(--title-bar-foreground);
+    background: var(--title-bar-background);
+  }
 }
 
 .taskbar__task:active {
