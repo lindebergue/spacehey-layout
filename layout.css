@@ -110,7 +110,7 @@ body::before {
   background-size: auto;
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
-  z-index: 3;
+  z-index: 4;
 }
 
 /* browser chrome */
@@ -624,12 +624,18 @@ body::before {
 
 /* msn messenger toast */
 .msnToast {
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 28px;
   width: 181px;
   height: 116px;
+  padding: 22px 2px 2px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url(https://lindebergue.github.io/spacehey-layout/images/msn.png);
+  text-align: center;
+  color: #29334e;
   z-index: 3;
   pointer-events: none;
 }
