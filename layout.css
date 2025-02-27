@@ -535,6 +535,11 @@ body::before {
     inset 2px 2px var(--3d-controls-shadow);
 }
 
+.taskbar__task.highlighted {
+  color: var(--title-bar-foreground);
+  background: var(--title-bar-background);
+}
+
 .taskbar__task:active {
   box-shadow: inset -1px -1px var(--3d-controls-highlight),
     inset 1px 1px var(--3d-controls-frame),
