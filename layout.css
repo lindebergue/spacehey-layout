@@ -634,6 +634,7 @@ body::before {
   justify-content: center;
   align-items: center;
   background-image: url(https://lindebergue.github.io/spacehey-layout/images/msn.png);
+  font: 11px 'MS Sans Serif Regular', sans-serif;
   text-align: center;
   color: #29334e;
   z-index: 3;
