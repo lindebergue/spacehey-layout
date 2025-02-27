@@ -787,3 +787,34 @@ nav .links {
   /* sidebar and friends comments table */
   background: white;
 }
+
+/* responsive styles */
+@media (min-width: 810px) {
+  /* make browser window float */
+  .browserChrome__contents {
+    box-shadow:
+    inset -1px -1px var(--3d-controls-frame),
+    inset 1px 1px var(--3d-controls-face),
+    inset -2px -2px var(--3d-controls-shadow),
+    inset 2px 2px var(--3d-controls-highlight);
+  }
+
+  .browserChrome.top .browserChrome__contents {
+    padding: 3px 3px 0 3px;
+  }
+
+  .browserChrome.bottom .browserChrome__contents {
+    padding: 0 3px 3px 3px;
+  }
+
+  .container {
+    /* window background */
+    background: var(--3d-controls-background);
+    padding: 3px;
+    box-shadow:
+      inset -1px -1px var(--3d-controls-frame),
+      inset 1px 1px var(--3d-controls-face),
+      inset -2px -2px var(--3d-controls-shadow),
+      inset 2px 2px var(--3d-controls-highlight);
+    }
+}
