@@ -637,25 +637,23 @@ body::before {
   font: 11px 'MS Sans Serif Regular', sans-serif;
   text-align: center;
   color: #29334e;
-  opacity: 0;
-  transform: translateY(100%);
-  animation-name: msnToast;
-  animation-delay: 1s;
-  animation-duration: .3s;
-  animation-timing-function: step-end;
-  animation-fill-mode: forwards;
+  animation: 10s msnToast;
   z-index: 2;
   pointer-events: none;
 }
 
 @keyframes msnToast {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(100%);
   }
-  to {
+  10% {
     opacity: 1;
     transform: translateY(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(100%);
   }
 }
 
