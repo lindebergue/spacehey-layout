@@ -536,8 +536,37 @@ body::before {
 }
 
 .taskbar__task.highlighted {
-  color: var(--title-bar-foreground);
-  background: var(--title-bar-background);
+  animation-name: taskHighlighted;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes taskHighlighted {
+  0% {
+    color: var(--3d-controls-foreground);
+    background: var(--3d-controls-background);
+  }
+  5% {
+    color: var(--title-bar-foreground);
+    background: var(--title-bar-background);
+  }
+  20% {
+    color: var(--3d-controls-foreground);
+    background: var(--3d-controls-background);
+  }
+  25% {
+    color: var(--title-bar-foreground);
+    background: var(--title-bar-background);
+  }
+  40% {
+    color: var(--3d-controls-foreground);
+    background: var(--3d-controls-background);
+  }
+  45% {
+    color: var(--title-bar-foreground);
+    background: var(--title-bar-background);
+  }
 }
 
 .taskbar__task:active {
@@ -637,21 +666,32 @@ body::before {
   font: 11px 'MS Sans Serif Regular', sans-serif;
   text-align: center;
   color: #29334e;
-  animation-duration: .3s;
+  animation-delay: 2s;
+  animation-duration: 5s;
   animation-name: msnToast;
   animation-fill-mode: forwards;
+  opacity: 0;
+  transform: translateY(100%);
   z-index: 2;
   pointer-events: none;
 }
 
 @keyframes msnToast {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(100%);
   }
-  to {
+  5% {
     opacity: 1;
     transform: translateY(0);
+  }
+  95% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
   }
 }
 
