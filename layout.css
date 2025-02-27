@@ -598,7 +598,7 @@ body::before {
 
 .taskbar__trayClock {
   position: relative;
-  padding: 4px 6px 2px 6px;
+  padding: 4px 6px 2px 10px;
   white-space: pre;
 }
 
