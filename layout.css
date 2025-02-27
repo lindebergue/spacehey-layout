@@ -674,37 +674,30 @@ body::before {
   transform: translateY(100%);
   z-index: 2;
   pointer-events: none;
-}
-
-.msnToast.message {
-  animation-delay: 2s;
-  animation-duration: 5s;
+  animation-duration: 7.5s;
   animation-name: msnToast;
   animation-fill-mode: forwards;
 }
 
+.msnToast.message {
+  animation-delay: 2s;
+}
+
 .msnToast.signedIn {
   animation-delay: 10s;
-  animation-duration: 5s;
-  animation-name: msnToast;
-  animation-iteration-count: infinite;
 }
 
 @keyframes msnToast {
   0% {
-    opacity: 0;
     transform: translateY(100%);
   }
   5% {
-    opacity: 1;
     transform: translateY(0);
   }
   95% {
-    opacity: 1;
     transform: translateY(0);
   }
   100% {
-    opacity: 0;
     transform: translateY(100%);
   }
 }
