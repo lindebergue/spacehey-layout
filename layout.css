@@ -556,28 +556,28 @@ body::before {
     background: var(--3d-controls-background);
   }
   5% {
-    color: var(--title-bar-foreground);
-    background: var(--title-bar-background);
+    color: var(--title-bar-active-foreground);
+    background: var(--title-bar-active-background);
   }
   20% {
     color: var(--3d-controls-foreground);
     background: var(--3d-controls-background);
   }
   25% {
-    color: var(--title-bar-foreground);
-    background: var(--title-bar-background);
+    color: var(--title-bar-active-foreground);
+    background: var(--title-bar-active-background);
   }
   40% {
     color: var(--3d-controls-foreground);
     background: var(--3d-controls-background);
   }
   45% {
-    color: var(--title-bar-foreground);
-    background: var(--title-bar-background);
+    color: var(--title-bar-active-foreground);
+    background: var(--title-bar-active-background);
   }
   100% {
-    color: var(--title-bar-foreground);
-    background: var(--title-bar-background);
+    color: var(--title-bar-active-foreground);
+    background: var(--title-bar-active-background);
   }
 }
 
