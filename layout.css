@@ -731,10 +731,15 @@ body::before {
 
 .menuBar__item {
   font: 11px 'MS Sans Serif Regular', sans-serif;
+  padding: 3px 8px 3px 7px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 /* textarea */
 .textarea {
+  padding: 3px;
+  flex: 1;
   background: var(--input-background);
   color: var(--input-foreground);
   cursor: var(--input-cursor), text;
