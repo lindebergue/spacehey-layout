@@ -149,7 +149,7 @@ body::before {
   padding: 0 2px;
   background: var(--title-bar-inactive-background);
   color: var(--title-bar-inactive-foreground);
-  font: 11px 'MS Sans Serif Bold', sans-serif;
+  font: 11px 'MS Sans Serif Regular', sans-serif;
   align-items: center;
   user-select: none;
 }
@@ -157,6 +157,7 @@ body::before {
 .titleBar.active {
   background: var(--title-bar-active-background);
   color: var(--title-bar-active-foreground);
+  font: 11px 'MS Sans Serif Bold', sans-serif;
 }
 
 .titleBar__icon {
