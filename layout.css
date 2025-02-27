@@ -670,14 +670,24 @@ body::before {
   font: 11px 'MS Sans Serif Regular', sans-serif;
   text-align: center;
   color: #29334e;
-  animation-delay: 2s;
-  animation-duration: 5s;
-  animation-name: msnToast;
-  animation-fill-mode: forwards;
   opacity: 0;
   transform: translateY(100%);
   z-index: 2;
   pointer-events: none;
+}
+
+.msnToast.message {
+  animation-delay: 2s;
+  animation-duration: 5s;
+  animation-name: msnToast;
+  animation-fill-mode: forwards;
+}
+
+.msnToast.signedIn {
+  animation-delay: 10s;
+  animation-duration: 5s;
+  animation-name: msnToast;
+  animation-iteration-count: infinite;
 }
 
 @keyframes msnToast {
