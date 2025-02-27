@@ -622,6 +622,18 @@ body::before {
   border-radius: 8px;
 }
 
+/* msn messenger toast */
+.msnToast {
+  position: absolute;
+  right: 0;
+  bottom: 28px;
+  width: 181px;
+  height: 116px;
+  background-image: url(https://lindebergue.github.io/spacehey-layout/images/msn.png);
+  z-index: 3;
+  pointer-events: none;
+}
+
 /* spacehey's specific styles */
 .container {
   /* move the content below the title bar and toolbar */
