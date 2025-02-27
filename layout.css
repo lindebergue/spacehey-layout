@@ -712,6 +712,8 @@ body::before {
 /* floating window */
 .window {
   position: fixed;
+  display: flex;
+  flex-flow: column nowrap;
   background: var(--3d-controls-background);
   padding: 3px;
   box-shadow:
@@ -719,6 +721,28 @@ body::before {
     inset 1px 1px var(--3d-controls-face),
     inset -2px -2px var(--3d-controls-shadow),
     inset 2px 2px var(--3d-controls-highlight);
+}
+
+/* menu bar */
+.menuBar {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.menuBar__item {
+  font: 11px 'MS Sans Serif Regular', sans-serif;
+}
+
+/* textarea */
+.textarea {
+  background: var(--input-background);
+  color: var(--input-foreground);
+  cursor: var(--input-cursor), text;
+  box-shadow:
+    inset -1px -1px var(--3d-controls-highlight),
+    inset 1px 1px var(--3d-controls-shadow),
+    inset -2px -2px var(--3d-controls-face),
+    inset 2px 2px var(--3d-controls-frame);
 }
 
 /* spacehey's specific styles */
