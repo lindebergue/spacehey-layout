@@ -548,6 +548,7 @@ body::before {
   animation-duration: 5s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
+  animation-timing-function: steps(1);
 }
 
 @keyframes taskHighlighted {
