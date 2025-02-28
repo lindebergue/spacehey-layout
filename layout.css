@@ -685,6 +685,7 @@ body::before {
   animation-duration: 6.25s;
   animation-name: msnToast;
   animation-fill-mode: forwards;
+  animation-timing-function: steps(8);
 }
 
 .msnToast.message {
