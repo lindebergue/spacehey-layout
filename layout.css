@@ -548,7 +548,7 @@ body::before {
   animation-duration: 5s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
-  animation-timing-function: steps(1);
+  animation-timing-function: steps(15);
 }
 
 @keyframes taskHighlighted {
@@ -742,6 +742,9 @@ body::before {
 .textarea {
   padding: 3px;
   flex: 1;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
   background: var(--input-background);
   color: var(--input-foreground);
   cursor: var(--input-cursor), text;
