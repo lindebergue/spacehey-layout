@@ -42,7 +42,7 @@
   --spacehey-primary-color: #503b64;
   --spacehey-secondary-color: #3a294a;
   --spacehey-header-background: url(https://lindebergue.github.io/spacehey-layout/images/stars.gif);
-  --spacehey-nav-background: rgba(0,0,0,.25);
+  --spacehey-nav-background: #000;
   --spacehey-background-color: #fff;
 }
 
