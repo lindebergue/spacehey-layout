@@ -41,8 +41,9 @@
 
   --spacehey-primary-color: #503b64;
   --spacehey-secondary-color: #3a294a;
+  --spacehey-header-background: url(https://lindebergue.github.io/spacehey-layout/images/stars.gif);
+  --spacehey-nav-background: rgba(0,0,0,.25);
   --spacehey-background-color: #fff;
-  --spacehey-icon-filter: sepia(1) hue-rotate(191deg);
 }
 
 /* cursors */
@@ -653,17 +654,6 @@ body::before {
   margin-left: 1px;
 }
 
-/* oldweb stars */
-.oldWebStars {
-  padding: 16px;
-  background-image: url(https://lindebergue.github.io/spacehey-layout/images/stars.gif);
-  color: white;
-  font-family: serif;
-  font-style: italic;
-  text-align: center;
-  border-radius: 8px;
-}
-
 /* msn messenger toast */
 .msnToast {
   position: fixed;
@@ -773,12 +763,12 @@ main {
 
 nav .top {
   /* header, logo section */
-  background: var(--spacehey-primary-color);
+  background: var(--spacehey-header-background);
 }
 
 nav .links {
   /* header, nav section */
-  background: var(--spacehey-secondary-color);
+  background: var(--spacehey-nav-background);
 }
 
 .profile
@@ -823,11 +813,6 @@ nav .links {
 .count {
   /* friends and friends comments count */
   color: var(--spacehey-primary-color);
-}
-
-.icon {
-  /* contact and links icons */
-  filter: var(--spacehey-icon-filter);
 }
 
 .comments-table td,
