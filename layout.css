@@ -715,6 +715,15 @@ body::before {
     inset 2px 2px var(--3d-controls-highlight);
 }
 
+@keyframes windowAppear {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
 /* menu bar */
 .menuBar {
   display: flex;
