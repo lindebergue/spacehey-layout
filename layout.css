@@ -719,6 +719,7 @@ body::before {
   animation-name: windowPopup;
   animation-duration: 5s;
   animation-fill-mode: forwards;
+  visibility: hidden;
 }
 
 @keyframes windowPopup {
