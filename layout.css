@@ -715,7 +715,13 @@ body::before {
     inset 2px 2px var(--3d-controls-highlight);
 }
 
-@keyframes windowAppear {
+.window.popup {
+  animation-name: windowPopup;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes windowPopup {
   0% {
     visibility: hidden;
   }
