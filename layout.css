@@ -873,6 +873,6 @@ nav .links {
   /* snap browser window to the left */
   .container,
   .browserChrome__contents {
-    margin-left: calc(min(380px,100% - 810px));
+    margin-left: calc(min(240px,100% - 810px));
   }
 }
