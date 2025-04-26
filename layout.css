@@ -870,3 +870,11 @@ nav .links {
       inset 2px 2px var(--3d-controls-highlight);
     }
 }
+
+@media (min-width: 1280px) {
+  /* snap browser window to the left */
+  .container,
+  .browserChrome__contents {
+    margin-left: 483px;
+  }
+}
