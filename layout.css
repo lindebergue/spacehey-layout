@@ -758,6 +758,12 @@ body::before {
     inset 2px 2px var(--3d-controls-frame);
 }
 
+.bonziBuddy {
+  position: fixed;
+  right: 10px;
+  bottom: 28px;
+}
+
 /* spacehey's specific styles */
 .container {
   /* move the content below the title bar and toolbar */
@@ -868,10 +874,8 @@ nav .links {
       inset 1px 1px var(--3d-controls-face),
       inset -2px -2px var(--3d-controls-shadow),
       inset 2px 2px var(--3d-controls-highlight);
-    }
-}
+  }
 
-@media (min-width: 810px) {
   /* snap browser window to the left */
   .container,
   .browserChrome__contents {
