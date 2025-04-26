@@ -136,7 +136,7 @@ body::before {
 .browserChrome__contents {
   width: 810px; /* spacehey's default layout width */
   max-width: 100%;
-  margin: 0 auto;
+  margin-left: calc(min(280px,100% - 810px));
   display: flex;
   flex-flow: column;
   background: var(--3d-controls-background);
@@ -762,6 +762,8 @@ body::before {
 .container {
   /* move the content below the title bar and toolbar */
   margin-top: 113px;
+  /* move content to the left */
+  margin-left: calc(min(280px,100% - 810px));
 }
 
 footer {
@@ -871,10 +873,3 @@ nav .links {
     }
 }
 
-@media (min-width: 1280px) {
-  /* snap browser window to the left */
-  .container,
-  .browserChrome__contents {
-    margin-left: 483px;
-  }
-}
