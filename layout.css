@@ -76,9 +76,6 @@ input[type='search'] {
 /* buttons */
 button:not(.logout-btn),
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: none;
   border-radius: 0;
   height: 23px;
@@ -97,6 +94,9 @@ button:not(.logout-btn),
 
 button:not(.logout-btn):active,
 .button:active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 2px 11px 0 13px;
   box-shadow:
     inset -1px -1px var(--3d-controls-highlight),
