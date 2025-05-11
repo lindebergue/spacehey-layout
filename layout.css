@@ -76,6 +76,9 @@ input[type='search'] {
 /* buttons */
 button:not(.logout-btn),
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   border-radius: 0;
   height: 23px;
@@ -100,6 +103,10 @@ button:not(.logout-btn):active,
     inset 1px 1px var(--3d-controls-frame),
     inset -2px -2px var(--3d-controls-face),
     inset 2px 2px var(--3d-controls-shadow);
+}
+
+.button {
+  min-width: 72px;
 }
 
 /* crt scanlines */
@@ -750,6 +757,7 @@ body::after {
 .messageBox__contents {
   display: flex;
   flex-flow: row nowrap;
+  margin-bottom: 8px;
 }
 
 .messageBox__icon {
@@ -759,7 +767,8 @@ body::after {
 }
 
 .messageBox__label {
-  margin-left: 24px;
+  margin-left: 16px;
+  align-self: center;
 }
 
 /* menu bar */
