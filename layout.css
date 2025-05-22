@@ -685,6 +685,12 @@ body::after {
   white-space: pre;
 }
 
+.taskbar__trayIcon {
+  width: 16px;
+  height: 16px;
+  image-rendering: pixelated;
+}
+
 .taskbar__trayIcon + .taskbar__trayIcon {
   margin-left: 1px;
 }
