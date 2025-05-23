@@ -890,6 +890,11 @@ nav .links {
   background: white;
 }
 
+.profile a {
+  /* profile links */
+  color: var(--spacehey-primary-color);
+}
+
 /* responsive styles */
 @media (min-width: 810px) {
   /* make browser window float */
