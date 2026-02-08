@@ -470,6 +470,9 @@ body::after {
 
 /* desktop */
 .desktop {
+  --desktop-item-size: calc(74 / 11 * 1em);
+  --desktop-icon-size: calc(32 / 11 * 1em);
+
   position: fixed;
   top: 0;
   left: 0;
@@ -478,8 +481,9 @@ body::after {
   padding-bottom: 28px;
   display: grid;
   grid-auto-flow: column;
-  grid-template-rows: repeat(auto-fill, 74px);
-  grid-auto-columns: 74px;
+  grid-template-rows: repeat(auto-fill, var(--desktop-item-size));
+  grid-auto-columns: var(--desktop-item-size);
+  font: 11px 'MS Sans Serif Regular', sans-serif;
   background-color: var(--desktop-background-color);
   background-image: var(--desktop-background-image);
   background-repeat: repeat;
@@ -493,13 +497,13 @@ body::after {
   display: flex;
   flex-flow: column;
   align-items: center;
-  width: 74px;
+  width: var(--desktop-item-size);
   z-index: -1;
 }
 
 .desktopIcon__image {
-  width: 32px;
-  height: 32px;
+  width: var(--desktop-icon-size);
+  height: var(--desktop-icon-size);
   image-rendering: pixelated;
 }
 
@@ -511,8 +515,8 @@ body::after {
   overflow: hidden;
   background: var(--desktop-background-color);
   color: var(--desktop-foreground);
-  font: 11px 'MS Sans Serif Regular', sans-serif;
-  margin-top: 6px;
+  margin-top: calc(6 / 11 * 1em);
+  line-clamp: 2;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
@@ -521,10 +525,11 @@ body::after {
   position: absolute;
   content: ' ';
   top: 0;
-  left: 21px;
-  width: 32px;
-  height: 32px;
+  left: calc(21 / 11 * 1em);
+  width: var(--desktop-icon-size);
+  height: var(--desktop-icon-size);
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADAFBMVEUAAAD/AAAA/wD//wAAAP//AP8A///////b29u2traSkpJtbW1JSUkkJCTbAAC2AACSAABtAABJAAAkAAAA2wAAtgAAkgAAbQAASQAAJADb2wC2tgCSkgBtbQBJSQAkJAAAANsAALYAAJIAAG0AAEkAACTbANu2ALaSAJJtAG1JAEkkACQA29sAtrYAkpIAbW0ASUkAJCT/29vbtra2kpKSbW1tSUlJJCT/trbbkpK2bW2SSUltJCT/kpLbbW22SUmSJCT/bW3bSUm2JCT/SUnbJCT/JCTb/9u227aStpJtkm1JbUkkSSS2/7aS25Jttm1JkkkkbSSS/5Jt221JtkkkkiRt/21J20kktiRJ/0kk2yQk/yTb2/+2ttuSkrZtbZJJSW0kJEm2tv+SktttbbZJSZIkJG2Skv9tbdtJSbYkJJJtbf9JSdskJLZJSf8kJNskJP///9vb27a2tpKSkm1tbUlJSST//7bb25K2tm2SkkltbST//5Lb2222tkmSkiT//23b20m2tiT//0nb2yT//yT/2//bttu2kraSbZJtSW1JJEn/tv/bktu2bbaSSZJtJG3/kv/bbdu2SbaSJJL/bf/bSdu2JLb/Sf/bJNv/JP/b//+229uStrZtkpJJbW0kSUm2//+S29tttrZJkpIkbW2S//9t29tJtrYkkpJt//9J29sktrZJ//8k29sk////27bbtpK2km2SbUltSSRJJAD/tpLbkm22bUmSSSRtJAD/ttvbkra2bZKSSW1tJElJACT/krbbbZK2SW2SJEltACTbtv+2ktuSbbZtSZJJJG0kAEm2kv+SbdttSbZJJJIkAG222/+SttttkrZJbZIkSW0AJEmStv9tkttJbbYkSZIAJG22/9uS27ZttpJJkm0kbUkASSSS/7Zt25JJtm0kkkkAbSTb/7a225KStm1tkklJbSQkSQC2/5KS221ttklJkiQkbQD/tgDbkgC2bQCSSQD/ALbbAJK2AG2SAEkAtv8AktsAbbYASZIAAAAAAADPKgIEAAAAaElEQVRYw+2UwQqAMAxD0+GH58/rQQSdghusrYe8Yxkke5QCQgghhBBCFGMkfeQhSQCw5Q1I+ggAPMLA9lBi908e2XG0fhAd+FmgN5Ba4BqeZaK9Dc/wjBL/2gF3r92BCgM2eWCW69kB+gNEY8Lut80AAAAASUVORK5CYII=);
+  background-size: var(--desktop-icon-size);
 }
 
 /* taskbar */
@@ -562,7 +567,6 @@ body::after {
   border: 0;
   background-color: var(--3d-controls-background);
   color: var(--3d-controls-foreground);
-  padding: 3px 4px;
   box-shadow: inset -1px -1px var(--3d-controls-frame),
     inset 1px 1px var(--3d-controls-highlight),
     inset -2px -2px var(--3d-controls-shadow),
