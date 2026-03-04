@@ -558,6 +558,18 @@ body::after {
   user-select: none;
 }
 
+.taskbar__thumb {
+  width: 3px;
+  flex: 3px 0 0;
+  margin-left: 3px;
+  box-shadow: inset -1px -1px var(--3d-controls-shadow), inset 1px 1px var(--3d-controls-highlight);
+}
+
+.taskbar__separator {
+  border-left: 1px solid var(--3d-controls-shadow);
+  box-shadow: 1px 0px var(--3d-controls-highlight);
+}
+
 .taskbar__tasks {
   --taskbar-gap: calc(3 / 11 * 1em);
 
