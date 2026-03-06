@@ -842,6 +842,8 @@ body::after {
 .textarea {
   padding: 3px;
   flex: 1;
+  font-size: 32px;
+  font-family: serif;
   background: var(--input-background);
   color: var(--input-foreground);
   cursor: var(--input-cursor), text;
