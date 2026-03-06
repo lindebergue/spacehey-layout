@@ -786,6 +786,7 @@ body::after {
   flex-flow: column nowrap;
   background: var(--3d-controls-background);
   padding: 3px;
+  font: 11px 'MS Sans Serif Regular', sans-serif;
   box-shadow:
     inset -1px -1px var(--3d-controls-frame),
     inset 1px 1px var(--3d-controls-face),
