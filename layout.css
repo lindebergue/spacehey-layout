@@ -852,6 +852,69 @@ body::after {
     inset 2px 2px var(--3d-controls-frame);
 }
 
+/* download dialog */
+
+.downloadDialog {
+  --download-padding: calc(12 / 11 * 1em);
+  padding-left: var(--download-padding);
+  padding-right: var(--download-padding);
+}
+
+.downloadDialog__label {
+  margin-bottom: calc(2 / 11 * 1em);
+}
+
+.downloadDialog__details {
+  display: flex;
+  gap: 6px;
+  margin-top: calc(4 / 11 * 1em);
+}
+
+.downloadDialog__buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-top: 22px;
+}
+
+.downloadDialog__progress {
+  --progress-box-shadow-north: calc(1 / 11 * -1em);
+  --progress-box-shadow-south: calc(1 / 11 * 1em);
+  appearance: none;
+  width: 100%;
+  height: calc(13 / 11 * 1em);
+  padding: calc(2 / 11 * 1em) 0;
+  background-color: var(--3d-controls-background);
+  box-shadow: inset var(--progress-box-shadow-north) var(--progress-box-shadow-north) var(--3d-controls-highlight),
+    inset var(--progress-box-shadow-south) var(--progress-box-shadow-south) var(--3d-controls-shadow);
+}
+
+.downloadDialog__progress::-moz-progress-bar,
+.downloadDialog__progress::-webkit-progress-value {
+  background: var(--spacehey-primary-color);
+}
+
+.downloadDialog__checkBox {
+  display: flex;
+  margin-top: calc(6 / 11 * 1em);
+}
+
+.downloadDialog__checkBoxMark {
+  --checkbox-size: calc(13 / 11 * 1em);
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  background: var(--input-background);
+  box-shadow:
+    inset -1px -1px var(--3d-controls-highlight),
+    inset 1px 1px var(--3d-controls-shadow),
+    inset -2px -2px var(--3d-controls-face),
+    inset 2px 2px var(--3d-controls-frame);
+}
+
+.downloadDialog__checkBoxLabel {
+  margin-left: calc(6 / 11 * 1em);
+}
+
 /* spacehey's specific styles */
 .container {
   /* move the content below the title bar and toolbar */
