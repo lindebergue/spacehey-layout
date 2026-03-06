@@ -559,15 +559,24 @@ body::after {
 }
 
 .taskbar__thumb {
-  width: 3px;
-  flex: 3px 0 0;
-  margin-left: 3px;
-  box-shadow: inset -1px -1px var(--3d-controls-shadow), inset 1px 1px var(--3d-controls-highlight);
+  --thumb-size: calc(3 / 11 * 1em);
+  --thumb-spacing: calc(2 / 11 * 1em);
+  --thumb-box-shadow-north: calc(1 / 11 * -1em);
+  --thumb-box-shadow-south: calc(1 / 11 * 1em);
+
+  width: var(--thumb-size);
+  flex: var(--thumb-size) 0 0;
+  margin-left: var(--thumb-size);
+  margin-top: var(--thumb-spacing);
+  margin-bottom: var(--thumb-spacing);
+  box-shadow: inset var(--thumb-box-shadow-north) var(--thumb-box-shadow-north) var(--3d-controls-shadow),
+    inset var(--thumb-box-shadow-south) var(--thumb-box-shadow-south) var(--3d-controls-highlight);
 }
 
 .taskbar__separator {
-  border-left: 1px solid var(--3d-controls-shadow);
-  box-shadow: 1px 0px var(--3d-controls-highlight);
+  --separator-size: calc(1 / 11 * 1em);
+  border-left: var(--separator-size) solid var(--3d-controls-shadow);
+  box-shadow: var(--separator-size) 0 var(--3d-controls-highlight);
 }
 
 .taskbar__tasks {
