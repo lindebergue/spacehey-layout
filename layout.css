@@ -40,7 +40,7 @@
   --input-foreground: #000;
   --input-cursor: url(data:;base64,AAACAAEAICAAAA8AEAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHvAAABEQAAAe8AAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAHvAAABEQAAAe8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA///////////////////////////////////////hD///4A///+AP///8f////H////x////8f////H////x////8f////H////x////8f////H////x////gD///4A///+EP//////////////////////////////////////8=);
 
-  --scanlines-fixed-color: rgba(76, 40, 100, 0.48);
+  --scanlines-fixed-color: rgba(76, 40, 100, 0.28);
   --scanlines-moving-color: rgba(0,0,0,.17);
 
   --spacehey-primary-color: #503b64;
